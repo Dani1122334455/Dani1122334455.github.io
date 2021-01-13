@@ -9,5 +9,4 @@ function Saludar() {
 }
 function cambiar(){
    document.querySelector("tr").style.backgroundColor = "red";
-   alert("gola");
 }
