@@ -13,4 +13,8 @@ function cambiar(){
    document.querySelector("#td1").textContent = "Adios";
 
    document.querySelector(".tr1").createElement("td");
+   document.createElement("button").addEventListener("click", Eliminar())
+}
+function Eliminar(){
+   document.getElementById("Tabla2").removeChild("tbody");
 }
