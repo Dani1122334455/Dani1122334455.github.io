@@ -21,6 +21,6 @@ function Eliminar(){
 function Info(){
    var li = document.getElementById("marvel-1");
    var atributos = li.getAttribute("data-comics");
-   alert(atributos);
+   alert("Data Comic: "+atributos);
 
 }
