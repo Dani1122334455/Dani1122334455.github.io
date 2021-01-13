@@ -8,6 +8,6 @@ function Saludar() {
    
 }
 function cambiar(){
-   document.querySelector(".tr1").style.backgroundColor = "red";
+   document.querySelector("tr").style.backgroundColor = "red";
    alert("gola");
 }
