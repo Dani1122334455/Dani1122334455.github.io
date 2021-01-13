@@ -18,3 +18,9 @@ function cambiar(){
 function Eliminar(){
    document.getElementById("Tabla2").removeChild("tbody");
 }
+function Info(){
+   var li = document.getElementById("marvel-1");
+   var atributos = li.getAttribute("data-comics");
+   alert(atributos);
+
+}
