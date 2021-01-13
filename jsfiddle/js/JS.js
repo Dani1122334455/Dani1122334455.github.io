@@ -11,4 +11,6 @@ function cambiar(){
    document.querySelector("tr").style.backgroundColor = "red";
 
    document.querySelector("#td1").textContent = "Adios";
+
+   document.querySelector(".tr1").createElement("td");
 }
