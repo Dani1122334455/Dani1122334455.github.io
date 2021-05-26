@@ -61,8 +61,8 @@ function RecuperaCookie(cookie_name){
       }
    }
 }
-document.cookie ="Nombre1=Arnau";
-document.cookie ="Nombre1=Illya";
-document.cookie ="Nombre1=Dani";
+document.cookie ="Nombre1=Arnau, 2000, Barcelona";
+document.cookie ="Nombre1=Illya, 2000, Russia";
+document.cookie ="Nombre1=Dani, 2000 , Caldes";
 
-document.write("Lista de personas"+document.cookie + "<p/>");
+document.write("Lista de personas"+document.cookie);
