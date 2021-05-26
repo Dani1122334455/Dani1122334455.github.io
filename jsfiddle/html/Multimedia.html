@@ -14,41 +14,4 @@
 </body>
 </html>
 
-<div id=”Carta”>
-    <ul id=”Menu1”>
-        <li id="plato1" data-Tipo="pasta" onclick="plato1()">Macarrones</li>
-        <li id="plato2" data-Tipo="pasta" onclick="plato2()">Canelones</li>
-        <li id="plato3" data-Tipo="carne">Albondigas</li>
-        <li id="plato4" data-Tipo="verdura">Ensalada</li>
-        <button onclick="Cambiar()">Cambiar Platos</button>
-   </ul>
-    <ul id=”Menu2”>
-        <li>pizza</li>
-        <li>lentejas</li>
-        <li>patatas</li>
-        <li>sopa</li>
-   </ul>
-</div>
-<script>
-    var alerta = "Has seleccionado el plato";
-    function Cambiar(){
-        document.getElementById("plato3").innerText = document.getElementById("plato2").innerText;
-    }
-    function plato1(){
-        document.getElementById("plato1").style = "color: cian";
-        alert(alerta+"1");
-    }
-    function plato2(){
-        document.getElementById("plato1").style = "color: red";
-        alert(alerta+"2");
-    }
 
-</script>
-<style>
-    li{
-        background-color: greenyellow;
-    }
-    li[data-Tipo='pasta']{
-        background-color: blueviolet;
-    }
-</style>
