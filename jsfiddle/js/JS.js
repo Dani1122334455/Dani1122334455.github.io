@@ -24,3 +24,45 @@ function Info(){
    alert("Data Comic: "+atributos);
 
 }
+var restaurante={
+   menu1:{
+      plato1: "Macarrones",
+      plato2: "Canelones",
+      plato3: "Pizza"
+   },
+   menu2:{
+      plato1: "Tofu",
+      plato2: "Empanadas",
+      plato3: "Patatas"
+   },
+   menu3:{
+      plato1: "Sopa",
+      plato2: "Entrecot",
+      plato3: "Lomo"
+   }
+}
+function EnmagatzemaCookie(cookie_name,cookie_value,exdays){
+   var c = new Date();
+   c.setTime(c.getTime()+ (exdays *24*60*60*1000));
+   var expiracion= "expiracion" + c.toUTCString();
+   document.cookie = cookie_name + "=" + cookie_value + ";" + expiracion + ";path=/";
+}
+function RecuperaCookie(cookie_name){
+   var nombre = cookie_name + "=";
+   var decodedCookie = decodeURIComponent(document.cookie);
+   var co = decodedCookie.split(';');
+   for(var y = 0; y <co.length; y++){
+      var c = co[i];
+      while(c.charAt(0)==''){
+         c = c.substring(1);
+      }
+      if(c.indexOf(nombre)==0){
+         return c.substring(nombre.length, c.length);
+      }
+   }
+}
+document.cookie ="Nombre1=Arnau";
+document.cookie ="Nombre1=Illya";
+document.cookie ="Nombre1=Dani";
+
+document.write("Lista de personas"+document.cookie + "<p/>");
