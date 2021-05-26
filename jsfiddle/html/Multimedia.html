@@ -14,7 +14,35 @@
 </body>
 </html>
 
-<video width="320" height="240" controls>
-    <source src="../M0xI41.K0nd4I.(Esp-HD-1080p).Entrepeliculasyseries.com.mp4" type="video/mp4">
-  </video>
+<button onclick="playPause()">Reproducir/Pausar</button>
+<button onclick="reload()">Recargar</button>
+<button onclick="makeLarge()">Maximizar</button>
+<button onclick="makeSmall()">Minimizar</button>
+<button onclick="makeNormal()">Normal</button>
+<br><br>
+<video id="videoPlayer" width="500">
+  <source src="../Perrito.mp4" type="video/mp4">
+  Tu navegador no soporta el vídeo de HTML5
+</video>
+<script> 
+    var video = document.getElementById("videoPlayer");
+    function playPause() { 
+        if (video.paused) 
+            video.play(); 
+        else 
+            video.pause(); 
+    }
+    function reload() { 
+       video.load(); 
+    }
+    function makeLarge() { 
+        video.width = 1000; 
+    }
+    function makeSmall() { 
+        video.width = 250; 
+    } 
+    function makeNormal() { 
+        video.width = 500; 
+    } 
+    </script>
   
